@@ -9,4 +9,6 @@
     <string name="where">Where</string>
     <string name="profile">Profile</string>
     <string name="add_post">Add Post</string>
+    <string name="profile_image"> Profile Image </string>
+    <string name="profile">Profile</string>
 </resources>
