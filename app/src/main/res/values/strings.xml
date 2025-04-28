@@ -35,4 +35,6 @@
     <string name="to_see_all_post_by_locations_click_here">To see all post by locations click here</string>
     <string name="select_location">Select location</string>
     <string name="pick_location">pick location</string>
+    <string name="sport_type_title">Sport type:</string>
+    <string name="sport_type_text">sport type</string>
 </resources>
