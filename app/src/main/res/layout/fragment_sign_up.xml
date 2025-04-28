@@ -20,45 +20,54 @@
 
         <ImageView
             android:id="@+id/logo_image"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
             android:importantForAccessibility="no"
-            android:src="@drawable/logowithbackground" />
+            android:src="@drawable/app_logo" />
 
-        <ImageView
-            android:id="@+id/greeting"
-            android:layout_width="wrap_content"
-            android:layout_height="91dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
-            android:importantForAccessibility="no"
-            android:src="@drawable/meowdy" />
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-100dp"
+            android:layout_marginBottom="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/blue"
+            android:shadowColor="#000000"
+            android:shadowRadius="6"
+            android:alpha="0.8"
+            android:textSize="70sp" />
 
         <EditText
             android:id="@+id/etEmail"
+            android:background="@drawable/custom_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="emailAddress"
-            android:background="@drawable/custom_edittext"
+            android:padding="10dp"
+            android:textSize="16sp"
             android:hint="@string/email"
+            android:textColorHint="@color/pink"
             android:inputType="textEmailAddress"
-            android:required="true"
-            android:textColorHint="@color/pink" />
+            android:required="true" />
 
         <EditText
             android:id="@+id/etPassword"
+            android:background="@drawable/custom_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="45dp"
+            android:textColorHint="@color/pink"
             android:autofillHints="password"
-            android:background="@drawable/custom_edittext"
+            android:padding="10dp"
+            android:textSize="16sp"
             android:hint="@string/password"
+
             android:inputType="textPassword"
-            android:required="true"
-            android:textColorHint="@color/pink" />
+            android:required="true"/>
 
         <Button
             android:id="@+id/btnSignUp"

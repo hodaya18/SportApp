@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Sporty</string>
+    <string name="back">Back </string>
+    <string name="add_post">Add Post</string>
+    <string name="post_photo">Post Photo</string>
+    <string name="profile">Profile</string>
+    <string name="sport_type">sport_type</string>
+    <string name="caption">Caption</string>
+    <string name="where">Where</string>
+    <string name="profile">Profile</string>
+    <string name="add_post">Add Post</string>
+    <string name="profile_image"> Profile Image </string>
+    <string name="profile">Profile</string>
+    <string name="sportdate_with_me">Sportydate With me</string>
+    <string name="location_post">Location:</string>
+    <string name="post_time">Post Time:</string>
+    <string name="where_are_you">Where are you?</string>
+    <string name="timestamp">Timestamp</string>
+    <string name="user_name">User Name</string>
+</resources>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:layoutDirection="ltr"
     android:layout_height="match_parent">
 
     <ImageView
@@ -21,38 +22,45 @@
 
         <ImageView
             android:id="@+id/logo_image"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
-            android:src="@drawable/logowithbackground" />
+            android:src="@drawable/app_logo" />
 
-        <ImageView
-            android:id="@+id/greeting"
-            android:layout_width="wrap_content"
-            android:layout_height="91dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
-            android:src="@drawable/meowdy" />
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-100dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/app_name"
+            android:textColor="@color/blue"
+            android:shadowColor="#000000"
+            android:shadowRadius="6"
+            android:alpha="0.8"
+            android:textSize="70sp"/>
 
         <EditText
             android:id="@+id/etEmail"
+            android:background="@drawable/custom_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:autofillHints="emailAddress"
-            android:background="@drawable/custom_edittext"
             android:hint="@string/email"
+            android:padding="10dp"
             android:inputType="textEmailAddress"
             android:required="true"
             android:textColorHint="@color/pink" />
 
         <EditText
             android:id="@+id/etPassword"
+            android:background="@drawable/custom_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="password"
-            android:background="@drawable/custom_edittext"
+            android:padding="10dp"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:required="true"
@@ -63,13 +71,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@drawable/custom_checkbox_background"
+            android:layout_marginStart="1dp"
             android:buttonTint="@color/pink"
             android:text="@string/remember_me"
             android:textColor="@color/pink" />
 
         <!-- Add a horizontal LinearLayout for buttons -->
         <LinearLayout
+            style="?android:attr/buttonBarStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -89,8 +98,9 @@
 
             <Button
                 android:id="@+id/btnSignUp"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="54dp"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_button_red"

@@ -15,27 +15,26 @@
         android:layout_height="match_parent"
         tools:context=".Modules.Profile.ProfileFragment">
 
-        <Button
+        <ImageButton
             android:id="@+id/btnEdit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/rounded_button_blue"
-            android:text="@string/edit" />
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_margin="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/profile"
+            android:scaleType="fitCenter"
+            android:src="@drawable/edit_profile" />
 
-        <Button
+        <ImageButton
             android:id="@+id/btnLogout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/rounded_button_red"
-            android:text="@string/logout" />
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/profile"
+            android:scaleType="fitCenter"
+            android:src="@drawable/log_out" />
 
         <ImageView
             android:id="@+id/ivProfileImage"
@@ -54,7 +53,7 @@
             android:layout_marginTop="16dp"
             android:text="@string/update_image"
             android:visibility="gone" />
-
+    
         <RelativeLayout
             android:id="@+id/UserName"
             android:layout_width="match_parent"
