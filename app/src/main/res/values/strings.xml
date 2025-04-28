@@ -14,6 +14,7 @@
     <string name="sportdate_with_me">Sportydate With me</string>
     <string name="location_post">Location:</string>
     <string name="post_time">Post Time:</string>
+    <string name="where_are_you">Where are you?</string>
     <string name="timestamp">Timestamp</string>
     <string name="user_name">User Name</string>
 </resources>
